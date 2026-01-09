@@ -1,0 +1,1 @@
+// categorias, idioma, ano escolar
