@@ -54,7 +54,7 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaProvider style={styles.screen}>
-      <StatusBar barStyle="light-content" backgroundColor="#000" />
+      <StatusBar barStyle="light-content" backgroundColor="#051C2C" />
       <ScrollView style={styles.scroll}>
         <Card item={heroPokemon} />
 
@@ -72,7 +72,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: "#000",
+    backgroundColor: "#051C2C",
   },
   scroll: {
     flex: 1,

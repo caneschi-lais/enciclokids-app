@@ -64,7 +64,7 @@ export default function DetailsScreen() {
                 options={{
                     title: pokemon.name.toUpperCase(),
                     headerTintColor: "#fff",
-                    headerStyle: { backgroundColor: "#000" },
+                    headerStyle: { backgroundColor: "rgb(6, 35, 53)" },
                 }}
             />
 
@@ -75,7 +75,7 @@ export default function DetailsScreen() {
                 blurRadius={5}
             >
                 <LinearGradient
-                    colors={["transparent", "#000"]}
+                    colors={["transparent", "rgb(6, 35, 53)"]}
                     style={styles.gradient}
                 />
             </ImageBackground>
@@ -114,10 +114,10 @@ export default function DetailsScreen() {
 }
 
 const styles = StyleSheet.create({
-    container: { flex: 1, backgroundColor: "#000" },
+    container: { flex: 1, backgroundColor: "#051C2C" },
     loadingContainer: {
         flex: 1,
-        backgroundColor: "#000",
+        backgroundColor: "#051C2C",
         justifyContent: "center",
         alignItems: "center",
     },
@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
     },
     tags: { flexDirection: "row", marginTop: 10 },
     tag: {
-        backgroundColor: "#333",
+        backgroundColor: "#0D4A6E",
         paddingHorizontal: 15,
         paddingVertical: 5,
         borderRadius: 20,

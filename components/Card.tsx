@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     container: {
         height: 400,
         marginBottom: 20,
-        backgroundColor: "#222",
+        backgroundColor: "#051C2C",
     },
     image: {
         width: "100%",
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
         padding: 20,
     },
     featuredTitle: {
-        color: "#E50914",
+        color: "#0D4A6E",
         fontWeight: "bold",
         letterSpacing: 2,
         fontSize: 14,
