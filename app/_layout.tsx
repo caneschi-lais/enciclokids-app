@@ -1,19 +1,20 @@
+import NavBar from "@/components/NavBar"; // Importe sua NavBar aqui
+import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
+import "@/global.css";
 import { Stack } from "expo-router";
 
-export default function Layout() {
+export default function RootLayout() {
   return (
-    <Stack
-      screenOptions={{
-        headerStyle: {
-          backgroundColor: "#051C2C",
-        },
-        headerTintColor: "#fff",
-        headerTitleStyle: {
-          fontWeight: "bold",
-        },
-      }}
-    >
-      <Stack.Screen name="index" options={{ headerShown: false }} />
-    </Stack>
+    <GluestackUIProvider>
+      <NavBar />
+
+      <Stack screenOptions={{ 
+        headerShown: false, 
+        contentStyle: { backgroundColor: '#051C2C' } 
+      }}>
+        <Stack.Screen name="index" />
+      </Stack>
+      
+    </GluestackUIProvider>
   );
 }

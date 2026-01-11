@@ -1,4 +1,5 @@
 import Card from "@/components/Card";
+import Footer from '@/components/Footer';
 import React, { useEffect, useState } from "react";
 import {
   FlatList, // renderiza listsa longa scrollavel
@@ -40,6 +41,7 @@ export default function HomeScreen() {
   const renderSection = (title: string, data: Pokemon[]) => (
     <View style={styles.sectionContainer}>
       <Text style={styles.sectionTitle}>{title}</Text>
+
       <FlatList
         data={data}
         horizontal
@@ -64,6 +66,8 @@ export default function HomeScreen() {
         {renderSection("Assista Novamente", list1)}
 
         <View style={{ height: 50 }} />
+
+        <Footer />
       </ScrollView>
     </SafeAreaProvider>
   );
